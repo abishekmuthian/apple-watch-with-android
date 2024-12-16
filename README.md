@@ -4,7 +4,7 @@
 
 This project aims to make Apple Watch usable with an Android Phone.
 
-Read about the motivations here -
+Read about the motivations here - https://abishekmuthian.com/apple-watch-with-android/ .
 
 Go inside individual folders to get more information.
 
