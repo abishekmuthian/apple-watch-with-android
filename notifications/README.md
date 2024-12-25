@@ -43,7 +43,7 @@ If everything goes as planned, you will start getting the android notification o
 
 ### Rotate the sent_ids.txt file
 
-Set crontab to rotate the sent_ids.txt file every day at 12 AM
+Set crontab to rotate the sent_ids.txt and notification_script.log files every day at 12 AM
 
 SSH into termux and run
 
@@ -56,7 +56,7 @@ $ sv-enable crond crontab -e
 Copy and paste the following into the editor
 
 ```
-0 0 * * * rm /data/data/com.termux/files/home/storage/termux-scripts/apple-watch-to-android/sent_ids.txt && touch /data/data/com.termux/files/home/storage/termux-scripts/apple-watch-to-android/sent_ids.txt
+0 0 * * * rm /data/data/com.termux/files/home/storage/termux-scripts/apple-watch-to-android/sent_ids.txt /data/data/com.termux/files/home/storage/termux-scripts/apple-watch-to-android/notification_script.log && touch /data/data/com.termux/files/home/storage/termux-scripts/apple-watch-to-android/sent_ids.txt
 ```
 
 press `ctrl + o` to save the file and `ctrl + x` to close the file.
